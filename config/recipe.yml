@@ -18,32 +18,124 @@ modules:
           # in /usr/etc/ in the image. read more in files module reference.
 
   - type: rpm-ostree
-    repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/alebastr/sway-extras/repo/fedora-%OS_VERSION%/alebastr-sway-extras-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/charlieqle/rpmspec/repo/fedora-%OS_VERSION%/charlieqle-rpmspec-fedora-%OS_VERSION%.repo
+      - https://terra.fyralabs.com/terra.repo
     install:
-      # - micro
-      # - starship
+      - adw-gtk3-theme
+      - adwaita-icon-theme
+      - bluez
+      - bluez-libs
+      - brightnessctl
+      - btop
+      - corectrl
+      - fprintd
+      - fprintd-pam
+      - gjs
+      - gnome-bluetooth-libs
+      - gnome-keyring
+      - gnome-keyring-pam
+      - gnome-online-accounts
+      - grim
+      - gtk3
+      - gtk4
+      - gtk-layer-shell
+      - gtk4-layer-shell
+      - gvfs
+      - gvfs-fuse
+      - gvfs-smb
+      - gvfs-mtp
+      - libadwaita
+      - libatomic
+      - libratbag-ratbagd
+      - lm_sensors
+      - nautilus
+      - nautilus-extensions
+      - nautilus-python
+      - ncdu
+      - nm-connection-editor
+      - nvtop
+      - nwg-launchers
+      - openresolv
+      - openvpn
+      - playerctl
+      - polkit-gnome
+      - pulseaudio-utils
+      - qt5-qtwayland
+      - qt6-qtwayland
+      - rofi-wayland
+      - slurp
+      - starship
+      - swayidle
+      - swaylock
+      - swww
+      - udiskie
+      - wayfire-git
+      - wayfire-plugins-extra-git
+      - wayland-logout
+      - wayvnc
+      - wf-shell
+      - wl-clipboard
+      - wlr-randr
+      - wofi
+      - xdg-desktop-portal-gtk
+      - xdg-desktop-portal-wlr
+      - xrandr
+      - yubikey-manager-qt
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox
+      - firefox-langpacks
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+    notify: true
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (user)"
       install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-        # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-      remove:
-        # - org.gnome.eog
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Snapshot
+        - org.gnome.Characters
+        - org.gnome.baobab
+        - org.gnome.Evince
+        - org.gnome.font-viewer
+        - org.gnome.Loupe
+        - org.gnome.Logs
+        - org.gnome.NautilusPreviewer
+        - org.gnome.TextEditor
+        - org.gnome.Weather
+        - org.fedoraproject.MediaWriter
+        - com.github.tchx84.Flatseal
+        - org.gustavoperedo.FontDownloader
+        - org.mozilla.firefox
+        - com.raggesilver.BlackBox
+        - com.visualstudio.code
+        - org.flatpak.Builder
+        - com.usebottles.bottles
+        - com.valvesoftware.Steam
+        - com.vysp3r.ProtonPlus
+        - com.github.Matoking.protontricks
+        - dev.vencord.Vesktop
+        - io.github.Foldex.r2mod
+        - org.prismlauncher.PrismLauncher
+        - com.github.rafostar.Clapper
+        - com.yubico.yubioath
+        - com.github.unrud.VideoDownloader
+        - com.github.flxzt.rnote
+        - com.bitwarden.desktop
+        - io.github.peazip.PeaZip
+        - org.pipewire.Helvum
+        - org.pulseaudio.pavucontrol
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
+  - type: akmods
+    base: main
+    install:
+      - openrazer
+      - openrgb
+      - v4l2loopback
+      - winesync
