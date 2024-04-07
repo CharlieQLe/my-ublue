@@ -140,5 +140,6 @@ modules:
     install:
       - openrazer
       - openrgb
+      - ryzen_smu
       - v4l2loopback
       - winesync
