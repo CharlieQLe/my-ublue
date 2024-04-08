@@ -70,11 +70,9 @@ modules:
       - pulseaudio-utils
       - qt5-qtwayland
       - qt6-qtwayland
-      - rofi-wayland
       - slurp
       - starship
       - swayidle
-      - swaylock
       - swww
       - udiskie
       - wayfire-git
@@ -104,8 +102,8 @@ modules:
         - org.gnome.Calendar
         - org.gnome.Snapshot
         - org.gnome.Characters
-        - org.gnome.baobab
         - org.gnome.Evince
+        - org.gnome.FileRoller
         - org.gnome.font-viewer
         - org.gnome.Loupe
         - org.gnome.Logs
@@ -114,7 +112,6 @@ modules:
         - org.gnome.Weather
         - org.fedoraproject.MediaWriter
         - com.github.tchx84.Flatseal
-        - org.gustavoperedo.FontDownloader
         - org.mozilla.firefox
         - com.raggesilver.BlackBox
         - com.visualstudio.code
@@ -131,7 +128,6 @@ modules:
         - com.github.unrud.VideoDownloader
         - com.github.flxzt.rnote
         - com.bitwarden.desktop
-        - io.github.peazip.PeaZip
         - org.pipewire.Helvum
         - org.pulseaudio.pavucontrol
 
