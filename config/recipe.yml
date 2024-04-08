@@ -139,5 +139,4 @@ modules:
       - openrazer
       - openrgb
       - ryzen-smu
-      - v4l2loopback
       - winesync
