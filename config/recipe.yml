@@ -38,6 +38,7 @@ modules:
       - fprintd-pam
       - gjs
       - gnome-bluetooth-libs
+      - gnome-disk-utility
       - gnome-keyring
       - gnome-keyring-pam
       - gnome-online-accounts
