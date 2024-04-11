@@ -52,6 +52,7 @@ modules:
       - gvfs-smb
       - gvfs-mtp
       - hyprlock
+      - kanshi
       - libadwaita
       - libatomic
       - libratbag-ratbagd
@@ -62,7 +63,6 @@ modules:
       - ncdu
       - nm-connection-editor
       - nvtop
-      - nwg-launchers
       - openrazer-meta
       - openresolv
       - openvpn
