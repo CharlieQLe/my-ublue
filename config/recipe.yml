@@ -78,6 +78,7 @@ modules:
       - udiskie
       - wayfire-git
       - wayfire-plugins-extra-git
+      - wayfire-rounded-corners-git
       - wayland-logout
       - wayvnc
       - wf-shell
@@ -121,6 +122,7 @@ modules:
         - com.valvesoftware.Steam
         - com.vysp3r.ProtonPlus
         - com.github.Matoking.protontricks
+        - com.github.neithern.g4music
         - dev.vencord.Vesktop
         - io.github.Foldex.r2mod
         - org.prismlauncher.PrismLauncher
