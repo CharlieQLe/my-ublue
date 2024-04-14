@@ -73,6 +73,7 @@ modules:
       - qt6-qtwayland
       - slurp
       - starship
+      - swaybg
       - swayidle
       - swww
       - udiskie
