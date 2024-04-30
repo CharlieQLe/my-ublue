@@ -142,4 +142,6 @@ modules:
     base: main
     install:
       - openrazer
+      - openrgb
       - ryzen-smu
+      - v4l2loopback
