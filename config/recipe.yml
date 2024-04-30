@@ -126,6 +126,7 @@ modules:
         - com.github.neithern.g4music
         - dev.vencord.Vesktop
         - io.github.Foldex.r2mod
+        - it.mijorus.gearlever
         - org.prismlauncher.PrismLauncher
         - com.github.rafostar.Clapper
         - com.yubico.yubioath
@@ -141,5 +142,4 @@ modules:
     base: main
     install:
       - openrazer
-      - openrgb
       - ryzen-smu
