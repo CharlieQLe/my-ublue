@@ -29,6 +29,7 @@ modules:
     install:
       - adw-gtk3-theme
       - adwaita-icon-theme
+      - blueman
       - bluez
       - bluez-libs
       - brightnessctl
@@ -36,6 +37,7 @@ modules:
       - corectrl
       - fprintd
       - fprintd-pam
+      - gcr
       - gjs
       - gnome-bluetooth-libs
       - gnome-disk-utility
