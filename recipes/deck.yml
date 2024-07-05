@@ -1,5 +1,11 @@
 modules:
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite-multilib/repo/fedora-%OS_VERSION%/kylegospo-bazzite-multilib-fedora-%OS_VERSION%.repo?arch=x86_64
+      - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo?arch=x86_64
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/LatencyFleX/repo/fedora-%OS_VERSION%/kylegospo-LatencyFleX-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/obs-vkcapture/repo/fedora-%OS_VERSION%/kylegospo-obs-vkcapture-fedora-%OS_VERSION%.repo?arch=x86_64
     install:
       - jupiter-fan-controls
       - jupiter-hw-support-btrfs
