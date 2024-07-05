@@ -18,6 +18,7 @@ modules:
           # in /usr/etc/ in the image. read more in files module reference.
       - lib: /lib
 
+  - from-file: desktop.yml
   - from-file: common.yml
 
   - type: script
