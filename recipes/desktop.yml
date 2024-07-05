@@ -25,3 +25,10 @@ modules:
       - qt6-qtwayland
       - starship
       - yubikey-manager-qt
+  - type: akmods
+    base: main
+    install:
+      - openrazer
+      - openrgb
+      - ryzen-smu
+      - v4l2loopback
