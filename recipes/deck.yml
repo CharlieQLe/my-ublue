@@ -33,4 +33,5 @@ modules:
       - python-crcmod
       - gamescope-session-plus
       - gamescope-session-steam
-  - type: script
+    remove:
+      - jupiter-sd-mounting-btrfs

@@ -25,6 +25,9 @@ modules:
       - qt6-qtwayland
       - starship
       - yubikey-manager-qt
+    remove:
+      - firefox
+      - firefox-langpacks
   - type: akmods
     base: main
     install:
