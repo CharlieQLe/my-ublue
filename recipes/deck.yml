@@ -1,0 +1,27 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - jupiter-fan-controls
+      - jupiter-hw-support-btrfs
+      - galileo-mura
+      - steamdeck-dsp
+      - powerbuttond
+      - adjustor
+      - vpower
+      - ds-inhibit
+      - steam_notif_daemon
+      - sdgyrodsu
+      - ibus-pinyin
+      - ibus-table-chinese-cangjie
+      - ibus-table-chinese-quick
+      - socat
+      - zstd
+      - zenity
+      - newt
+      - qt6-qtvirtualkeyboard
+      - xorg-x11-server-Xvfb
+      - python-vdf
+      - python-crcmod
+      - gamescope-session-plus
+      - gamescope-session-steam
+  - type: script
