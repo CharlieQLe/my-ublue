@@ -35,3 +35,21 @@ modules:
       - gamescope-session-steam
     remove:
       - jupiter-sd-mounting-btrfs
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
+        packages:
+          - upower
+          - upower-libs
+  - type: systemd
+    system:
+      disabled:
+        - jupiter-fan-control.service
+        - vpower.service
+        - jupiter-biosupdate.service
+        - jupiter-controller-update.service
+        - batterylimit.service
+    user:
+      enabled:
+        - steam-web-debug-portforward.service
+      disabled:
+        - sdgyrodsu.service
