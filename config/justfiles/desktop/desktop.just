@@ -1,6 +1,3 @@
-import '100-bling.just'
-# Include some of your custom scripts here!
-
 post-setup:
     #!/usr/bin/env bash
     flatpak --user override --filesystem=xdg-config/gtk-3.0:ro
@@ -26,4 +23,3 @@ setup-gaming:
     cp /usr/etc/my-ublue/MangoHud.conf ~/.config/MangoHud
     rpm-ostree kargs --append-if-missing=amdgpu.ppfeaturemask=0xffffffff --append-if-missing=amdgpu.gpu_recovery=1
     sudo usermod -a -G gamemode "$USER"
-    sudo systemctl enable --now ratbagd.service

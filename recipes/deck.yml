@@ -20,9 +20,6 @@ modules:
       - ds-inhibit
       - steam_notif_daemon
       - sdgyrodsu
-      - ibus-pinyin
-      - ibus-table-chinese-cangjie
-      - ibus-table-chinese-quick
       - socat
       - zstd
       - zenity
@@ -53,3 +50,7 @@ modules:
         - steam-web-debug-portforward.service
       disabled:
         - sdgyrodsu.service
+  - type: justfiles
+    validate: true
+    include:
+      - deck

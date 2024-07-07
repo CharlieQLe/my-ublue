@@ -35,3 +35,7 @@ modules:
       install:
         - com.valvesoftware.Steam
         - com.github.Matoking.protontricks
+  - type: justfiles
+    validate: true
+    include:
+      - desktop
