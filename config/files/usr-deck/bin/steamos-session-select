@@ -8,5 +8,11 @@ if [[ $EUID != 0 ]]; then
   exit 1
 fi
 
-systemctl reset-failed gdm
-systemctl restart gdm
+# If gnome-shell is running, kill gamescope
+# Otherwise, restart GDM since we are in gaming mode
+if pgrep -x "gnome-shell" > /dev/null; then
+    pkill gamescope
+else
+    systemctl reset-failed gdm
+    systemctl restart gdm
+fi
