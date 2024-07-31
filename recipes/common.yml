@@ -36,7 +36,6 @@ modules:
         - org.mozilla.firefox
         - com.raggesilver.BlackBox
         - com.visualstudio.code
-        - org.flatpak.Builder
         - com.usebottles.bottles
         - com.vysp3r.ProtonPlus
         - com.github.neithern.g4music
