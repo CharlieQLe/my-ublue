@@ -20,6 +20,7 @@ modules:
       - gnome-shell-extension-hotedge
       - gnome-shell-extension-caffeine
       - sddm
+      - sddm-wayland-generic
   - type: systemd
     system:
       enabled:
