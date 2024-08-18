@@ -1,56 +1,26 @@
 modules:
   - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite-multilib/repo/fedora-%OS_VERSION%/kylegospo-bazzite-multilib-fedora-%OS_VERSION%.repo?arch=x86_64
-      - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo?arch=x86_64
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/LatencyFleX/repo/fedora-%OS_VERSION%/kylegospo-LatencyFleX-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/obs-vkcapture/repo/fedora-%OS_VERSION%/kylegospo-obs-vkcapture-fedora-%OS_VERSION%.repo?arch=x86_64
-      - https://copr.fedorainfracloud.org/coprs/hhd-dev/hhd/repo/fedora-%OS_VERSION%/hhd-dev-hhd-fedora-%OS_VERSION%.repo
     install:
-      - jupiter-fan-control
-      - jupiter-hw-support-btrfs
-      - galileo-mura
-      - steamdeck-dsp
-      - powerbuttond
-      - hhd
-      - hhd-ui
-      - adjustor
-      - vpower
-      - ds-inhibit
-      - steam_notif_daemon
-      - sdgyrodsu
-      - socat
-      - zstd
-      - zenity
-      - newt
-      - qt6-qtvirtualkeyboard
-      - xorg-x11-server-Xvfb
-      - python-vdf
-      - python-crcmod
-      - gamescope-session-plus
-      - gamescope-session-steam
+      - gnome-software-rpm-ostree
     remove:
-      - jupiter-sd-mounting-btrfs
-    replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
-        packages:
-          - upower
-          - upower-libs
+      - ptyxis
+      - nautilus-gsconnect
+      - steamdeck-backgrounds
+      - steamdeck-gnome-presets
+      - gnome-shell-extension-caribou-blocker
+      - gnome-shell-extension-user-theme
+      - gnome-shell-extension-gsconnect
+      - gnome-shell-extension-compiz-windows-effect
+      - gnome-shell-extension-compiz-alike-magic-lamp-effect
+      - gnome-shell-extension-just-perfection
+      - gnome-shell-extension-blur-my-shell
+      - gnome-shell-extension-hanabi
+      - gnome-shell-extension-gamerzilla
+      - gnome-shell-extension-bazzite-menu
+      - gnome-shell-extension-hotedge
+      - gnome-shell-extension-caffeine
+      - sddm
   - type: systemd
     system:
-      disabled:
-        - jupiter-fan-control.service
-        - vpower.service
-        - jupiter-biosupdate.service
-        - jupiter-controller-update.service
-        - batterylimit.service
-    user:
       enabled:
-        - steam-web-debug-portforward.service
-      disabled:
-        - sdgyrodsu.service
-  - type: justfiles
-    validate: true
-    include:
-      - deck
+        - gdm.service
