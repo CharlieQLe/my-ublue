@@ -10,11 +10,6 @@ post-setup:
     cp /usr/etc/my-ublue/podman-host ~/.local/bin/podman-host
     chmod +x ~/.local/bin/podman-host
 
-fix-aoc-edid:
-    #!/usr/bin/env bash
-    rpm-ostree kargs --append-if-missing=drm.edid_firmware=DP-3:edid/aoc-edid.bin --append-if-missing=video=DP-3:e
-    rpm-ostree initramfs --enable --arg=-I --arg=/lib/firmware/edid/aoc-edid.bin --arg=--add --arg=fido2  
-
 setup-gaming:
     #!/usr/bin/env bash
     flatpak --user override --filesystem=xdg-config/MangoHud:ro com.valvesoftware.Steam
