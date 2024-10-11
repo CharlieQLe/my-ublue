@@ -1,0 +1,12 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - nautilus-extensions
+      - nautilus-python
+      - qt5-qtwayland
+      - qt6-qtwayland
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/charlieqle/rpmspec/repo/fedora-%OS_VERSION%/charlieqle-rpmspec-fedora-%OS_VERSION%.repo
+        packages:
+          - mutter
+          - mutter-common

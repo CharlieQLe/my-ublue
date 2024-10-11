@@ -1,10 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: my-ublue
+name: my-ublue-kde
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -20,7 +20,5 @@ modules:
   - from-file: common.yml
 
   - from-file: desktop-base.yml
-
-  - from-file: desktop-gnome.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
