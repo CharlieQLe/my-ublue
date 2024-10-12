@@ -22,9 +22,9 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
-          - recipe.yml
-          - recipe-kde.yml
-          - recipe-deck.yml
+          - desktop-gnome.yml
+          - desktop-kde.yml
+          - deck.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image

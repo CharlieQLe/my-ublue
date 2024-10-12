@@ -5,12 +5,14 @@ modules:
       - https://download.opensuse.org/repositories/hardware:/razer/Fedora_%OS_VERSION%/hardware:razer.repo
       - https://copr.fedorainfracloud.org/coprs/ycollet/audinux/repo/fedora-%OS_VERSION%/ycollet-audinux-fedora-%OS_VERSION%.repo
     install:
+      - fira-code-fonts
       - git-lfs
       - input-leap
       - ladspa-caps-plugins
       - ladspa-noise-suppression-for-voice
       - ncdu
       - openrazer-meta
+      - rsms-inter-fonts
       - starship
       - yubikey-manager-qt
   - type: default-flatpaks

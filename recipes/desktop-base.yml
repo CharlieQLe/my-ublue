@@ -1,11 +1,14 @@
 modules:
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-%OS_VERSION%/che-nerd-fonts-fedora-%OS_VERSION%.repo
     install:
       - adw-gtk3-theme
       - btop
       - corectrl
       - fprintd-pam
       - lm_sensors
+      - nerd-fonts
     remove:
       - firefox
       - firefox-langpacks
