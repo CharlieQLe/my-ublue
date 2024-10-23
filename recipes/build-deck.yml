@@ -5,7 +5,7 @@ description: This is my personal OS image for Steam Deck.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite-deck-gnome
-image-version: latest # latest is also supported if you want new updates ASAP
+image-version: unstable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -21,7 +21,6 @@ modules:
     install:
       - gnome-software-rpm-ostree
     remove:
-      - ptyxis
       - nautilus-gsconnect
       - steamdeck-backgrounds
       - steamdeck-gnome-presets
