@@ -13,11 +13,13 @@ modules:
   - from-file: common.yml
 
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
     install:
       - adw-gtk3-theme
       - btop
-      - corectrl
       - fprintd-pam
+      - lact-libadwaita
       - lm_sensors
       - qt5-qtwayland
       - qt6-qtwayland
