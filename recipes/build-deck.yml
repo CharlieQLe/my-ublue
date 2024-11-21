@@ -18,8 +18,6 @@ modules:
         destination: /usr
 
   - type: rpm-ostree
-    install:
-      - gnome-software-rpm-ostree
     remove:
       - nautilus-gsconnect
       - steamdeck-backgrounds
