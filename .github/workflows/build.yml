@@ -24,6 +24,7 @@ jobs:
           # !! Add your recipes here 
           - build-desktop.yml
           - build-deck.yml
+          - build-server.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
