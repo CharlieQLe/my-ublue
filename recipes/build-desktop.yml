@@ -23,6 +23,7 @@ modules:
       - lm_sensors
       - qt5-qtwayland
       - qt6-qtwayland
+      - xr-hardware
     remove:
       - firefox
       - firefox-langpacks

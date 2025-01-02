@@ -10,6 +10,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ycollet/audinux/repo/fedora-%OS_VERSION%/ycollet-audinux-fedora-%OS_VERSION%.repo
     install:
+      - ddcutil
       - git-lfs
       - input-leap
       - ladspa-caps-plugins
@@ -47,7 +48,6 @@ modules:
         - com.vysp3r.ProtonPlus
         - com.github.neithern.g4music
         - dev.vencord.Vesktop
-        - io.github.Foldex.r2mod
         - it.mijorus.gearlever
         - org.prismlauncher.PrismLauncher
         - com.github.rafostar.Clapper
