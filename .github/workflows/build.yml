@@ -25,6 +25,7 @@ jobs:
           - build-desktop.yml
           - build-deck.yml
           - build-server.yml
+          - build-desktop-niri.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
