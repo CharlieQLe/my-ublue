@@ -1,0 +1,3 @@
+mouse:*:name:Logitech ERGO M575:*
+ ID_INPUT_TRACKBALL=1
+ MOUSE_DPI=380@125

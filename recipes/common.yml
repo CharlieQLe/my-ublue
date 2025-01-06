@@ -16,6 +16,7 @@ modules:
       - ladspa-caps-plugins
       - ladspa-noise-suppression-for-voice
       - ncdu
+      - solaar
       - starship
       - yubikey-manager-qt
   - type: bling
