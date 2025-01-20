@@ -19,6 +19,7 @@ modules:
       - adw-gtk3-theme
       - btop
       - fprintd-pam
+      - gamescope
       - lact-libadwaita
       - lm_sensors
       - qt5-qtwayland
