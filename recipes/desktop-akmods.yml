@@ -9,5 +9,4 @@ modules:
     base: main
     install:
       - openrazer
-      - ryzen-smu
       - v4l2loopback
