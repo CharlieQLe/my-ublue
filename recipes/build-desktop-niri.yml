@@ -29,11 +29,9 @@ modules:
       - firefox
       - firefox-langpacks
 
-  - from-file: desktop-akmods.yml
-
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/markupstart/xwayland-satellite/repo/fedora-%OS_VERSION%/markupstart-xwayland-satellite-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-%OS_VERSION%/yalter-niri-git-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/tswsl1989/tswsl-wayland-extras/repo/fedora-%OS_VERSION%/tswsl1989-tswsl-wayland-extras-fedora-%OS_VERSION%.repo
