@@ -12,6 +12,8 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - from-file: common.yml
 
+  - from-file: niri.yml
+
   - type: files
     files:
       - source: system/usr-deck
@@ -40,21 +42,4 @@ modules:
     system:
       enabled:
         - gdm.service
-
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-%OS_VERSION%/yalter-niri-git-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/tswsl1989/tswsl-wayland-extras/repo/fedora-%OS_VERSION%/tswsl1989-tswsl-wayland-extras-fedora-%OS_VERSION%.repo
-    install:
-      - niri
-      - xwayland-satellite
-      - gtk4-layer-shell
-      - SwayNotificationCenter
-      - waybar
-      - blueman
-      - mate-polkit
-      - gtklock
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

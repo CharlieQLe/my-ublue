@@ -11,6 +11,8 @@ image-version: 42 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: common.yml
+  
+  - from-file: niri.yml
 
   - type: rpm-ostree
     repos:
