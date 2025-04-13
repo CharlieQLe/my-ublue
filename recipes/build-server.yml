@@ -16,5 +16,8 @@ modules:
       - intel-gpu-tools
       - libva-utils
       - progress
+      - tree
+      - zip
+      - unzip
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
