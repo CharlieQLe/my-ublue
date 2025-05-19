@@ -17,6 +17,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/repo/fedora-%OS_VERSION%/lizardbyte-beta-fedora-%OS_VERSION%.repo
     install:
       - adw-gtk3-theme
       - btop
@@ -27,6 +28,7 @@ modules:
       - qt5-qtwayland
       - qt6-qtwayland
       - rocm-smi
+      - sunshine
       - xr-hardware
     remove:
       - firefox
