@@ -28,7 +28,7 @@ modules:
       - qt5-qtwayland
       - qt6-qtwayland
       - rocm-smi
-      - sunshine
+      - Sunshine
       - xr-hardware
     remove:
       - firefox
