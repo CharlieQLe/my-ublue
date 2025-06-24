@@ -16,14 +16,12 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/repo/fedora-%OS_VERSION%/lizardbyte-beta-fedora-%OS_VERSION%.repo
     install:
       - adw-gtk3-theme
       - btop
       - fprintd-pam
       - gamescope
-      - lact-libadwaita
       - lm_sensors
       - qt5-qtwayland
       - qt6-qtwayland
