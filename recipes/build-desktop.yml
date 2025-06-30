@@ -17,9 +17,11 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/repo/fedora-%OS_VERSION%/lizardbyte-beta-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
     install:
       - adw-gtk3-theme
       - btop
+      - coolercontrol
       - fprintd-pam
       - gamescope
       - lm_sensors
@@ -31,5 +33,10 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+
+  - type: systemd
+    system:
+      enabled:
+        - coolercontrold.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
