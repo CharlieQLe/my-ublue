@@ -30,6 +30,9 @@ modules:
       - rocm-smi
       - Sunshine
       - xr-hardware
+      - dbus-x11
+      - podman-compose
+      - swaybg
     remove:
       - firefox
       - firefox-langpacks
