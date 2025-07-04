@@ -34,6 +34,12 @@ modules:
       - firefox
       - firefox-langpacks
 
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/mecattaf/duoRPM/repo/fedora-%OS_VERSION%/mecattaf-duoRPM-fedora-%OS_VERSION%.repo
+    install:
+      - scroll
+
   - type: systemd
     system:
       enabled:
