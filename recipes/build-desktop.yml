@@ -15,6 +15,25 @@ modules:
   - from-file: niri.yml
 
   - type: rpm-ostree
+    install:
+      - cosmic-applets
+      - cosmic-bg
+      - cosmic-edit
+      - cosmic-files
+      - cosmic-launcher
+      - cosmic-notifications
+      - cosmic-osd
+      - cosmic-randr
+      - cosmic-screenshot
+      - cosmic-session
+      - cosmic-settings
+      - cosmic-term
+      - cosmic-workspaces
+      - cosmic-idle
+      - cosmic-icon-theme
+      - xdg-desktop-portal-cosmic
+
+  - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/repo/fedora-%OS_VERSION%/lizardbyte-beta-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
@@ -35,12 +54,6 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/mecattaf/duoRPM/repo/fedora-%OS_VERSION%/mecattaf-duoRPM-fedora-%OS_VERSION%.repo
-    install:
-      - scroll
 
   - type: systemd
     system:
