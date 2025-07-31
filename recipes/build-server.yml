@@ -11,8 +11,12 @@ image-version: stable-zfs # latest is also supported if you want new updates ASA
 # you can include multiple instances of the same module
 modules:
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
     install:
       - btop
+      - coolercontrol
+      - lm_sensors
       - intel-gpu-tools
       - libva-utils
       - progress
