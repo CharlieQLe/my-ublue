@@ -10,23 +10,16 @@ image-version: stable-zfs # latest is also supported if you want new updates ASA
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: coolercontrol.yml
+
   - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
     install:
       - btop
-      - coolercontrol
-      - lm_sensors
       - intel-gpu-tools
       - libva-utils
       - progress
       - tree
       - zip
       - unzip
-
-  - type: systemd
-    system:
-      enabled:
-        - coolercontrold.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
