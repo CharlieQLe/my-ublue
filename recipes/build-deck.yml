@@ -19,24 +19,25 @@ modules:
       - source: system/usr-deck
         destination: /usr
 
-  - type: rpm-ostree
+  - type: dnf
     remove:
-      - nautilus-gsconnect
-      - steamdeck-backgrounds
-      - steamdeck-gnome-presets
-      - gnome-shell-extension-caribou-blocker
-      - gnome-shell-extension-user-theme
-      - gnome-shell-extension-gsconnect
-      - gnome-shell-extension-compiz-windows-effect
-      - gnome-shell-extension-compiz-alike-magic-lamp-effect
-      - gnome-shell-extension-just-perfection
-      - gnome-shell-extension-blur-my-shell
-      - gnome-shell-extension-hanabi
-      - gnome-shell-extension-bazzite-menu
-      - gnome-shell-extension-hotedge
-      - gnome-shell-extension-caffeine
-      - sddm
-      - sddm-wayland-generic
+      packages:
+        - nautilus-gsconnect
+        - steamdeck-backgrounds
+        - steamdeck-gnome-presets
+        - gnome-shell-extension-caribou-blocker
+        - gnome-shell-extension-user-theme
+        - gnome-shell-extension-gsconnect
+        - gnome-shell-extension-compiz-windows-effect
+        - gnome-shell-extension-compiz-alike-magic-lamp-effect
+        - gnome-shell-extension-just-perfection
+        - gnome-shell-extension-blur-my-shell
+        - gnome-shell-extension-hanabi
+        - gnome-shell-extension-bazzite-menu
+        - gnome-shell-extension-hotedge
+        - gnome-shell-extension-caffeine
+        - sddm
+        - sddm-wayland-generic
 
   - type: systemd
     system:

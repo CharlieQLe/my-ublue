@@ -1,13 +1,16 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://copr.fedorainfracloud.org/coprs/tswsl1989/tswsl-wayland-extras/repo/fedora-%OS_VERSION%/tswsl1989-tswsl-wayland-extras-fedora-%OS_VERSION%.repo
+      copr:
+        - yalter/niri-git
+        - avengemedia/dms
     install:
-      - xwayland-satellite
-      - gtk4-layer-shell
-      - blueman
-      - gtklock
+      packages:
+        - blueman
+        - dms
+        - mate-polkit
+        - niri
     replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-%OS_VERSION%/yalter-niri-git-fedora-%OS_VERSION%.repo
+      - from-repo: copr:copr.fedorainfracloud.org:yalter:niri-git
         packages:
           - niri

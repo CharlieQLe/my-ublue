@@ -1,10 +1,12 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://copr.fedorainfracloud.org/coprs/codifryed/CoolerControl/repo/fedora-%OS_VERSION%/codifryed-CoolerControl-fedora-%OS_VERSION%.repo
+      copr:
+        - codifryed/CoolerControl
     install:
-      - coolercontrol
-      - lm_sensors
+      packages:
+        - coolercontrol
+        - lm_sensors
 
   - type: systemd
     system:

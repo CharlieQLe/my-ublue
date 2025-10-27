@@ -12,14 +12,15 @@ image-version: stable-zfs # latest is also supported if you want new updates ASA
 modules:
   - from-file: coolercontrol.yml
 
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - btop
-      - intel-gpu-tools
-      - libva-utils
-      - progress
-      - tree
-      - zip
-      - unzip
+      packages:
+        - btop
+        - intel-gpu-tools
+        - libva-utils
+        - progress
+        - tree
+        - zip
+        - unzip
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
