@@ -17,25 +17,6 @@ modules:
   - from-file: coolercontrol.yml
 
   - type: rpm-ostree
-    install:
-      - cosmic-applets
-      - cosmic-bg
-      - cosmic-edit
-      - cosmic-files
-      - cosmic-launcher
-      - cosmic-notifications
-      - cosmic-osd
-      - cosmic-randr
-      - cosmic-screenshot
-      - cosmic-session
-      - cosmic-settings
-      - cosmic-term
-      - cosmic-workspaces
-      - cosmic-idle
-      - cosmic-icon-theme
-      - xdg-desktop-portal-cosmic
-
-  - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/repo/fedora-%OS_VERSION%/lizardbyte-beta-fedora-%OS_VERSION%.repo
     install:
@@ -53,5 +34,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+
+  - from-file: desktop-akmods.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

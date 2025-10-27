@@ -1,12 +1,5 @@
 modules:
-  - type: rpm-ostree
-    repos:
-      - https://download.opensuse.org/repositories/hardware:/razer/Fedora_%OS_VERSION%/hardware:razer.repo
-      - https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/fedora-%OS_VERSION%/ublue-os-akmods-fedora-%OS_VERSION%.repo
-    install:
-      - openrazer-meta
   - type: akmods
     base: main
     install:
-      - openrazer
       - v4l2loopback
