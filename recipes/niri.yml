@@ -9,6 +9,7 @@ modules:
         - gtk4-layer-shell
         - blueman
         - dms
+        - dms-greeter
         - mate-polkit
         - niri
     replace:
